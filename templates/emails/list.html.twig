@@ -11,6 +11,7 @@
             <strong>De :</strong> {{ email.from }}<br>
             <strong>Sujet :</strong> {{ email.subject }}<br>
             <strong>Date :</strong> {{ email.date }}<br>
+            <a href="{{ path('gmail_email', { id: email.id }) }}">Voir les détails</a>
         </li>
     {% endfor %}
 </ul>

@@ -1,0 +1,9 @@
+<h1>{{ subject }}</h1>
+<p><strong>De :</strong> {{ from }}</p>
+<p><strong>Date :</strong> {{ date }}</p>
+<hr>
+<div>
+    {{ body|raw }}
+</div>
+<hr>
+<a href="{{ path('gmail_list') }}">Retour à la liste</a>
