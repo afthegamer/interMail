@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des Emails</title>
+</head>
+<body>
+<h1>Liste des Emails</h1>
+<ul>
+    {% for email in emails %}
+        <li>
+            <strong>De :</strong> {{ email.from }}<br>
+            <strong>Sujet :</strong> {{ email.subject }}<br>
+            <strong>Date :</strong> {{ email.date }}<br>
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
