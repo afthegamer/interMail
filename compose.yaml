@@ -14,6 +14,12 @@ services:
       # - ./docker/db/data:/var/lib/postgresql/data:rw
 ###< doctrine/doctrine-bundle ###
 
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "1025:1025" # SMTP port
+      - "8025:8025" # HTTP port
+
 volumes:
 ###> doctrine/doctrine-bundle ###
   database_data:
